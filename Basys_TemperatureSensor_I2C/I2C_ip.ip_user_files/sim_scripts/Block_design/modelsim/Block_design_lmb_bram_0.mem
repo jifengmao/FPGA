@@ -1,0 +1,16 @@
+// Mem file initialization records.
+//
+// SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+// Vivado v2018.3 (64-bit)
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// Created on Friday September 06, 2019 - 06:34:02 am, from:
+//
+//     Map file     - C:\Users\maoji\Work\FPGA_Projects\Basys_I2C\AXI_IIC_IP\I2C_ip.srcs\sources_1\bd\Block_design\Block_design.bmm
+//     Data file(s) - c:/Users/maoji/Work/FPGA_Projects/Basys_I2C/AXI_IIC_IP/I2C_ip.srcs/sources_1/bd/Block_design/ip/Block_design_microblaze_0_0/data/mb_bootloop_le.elf
+//
+// Address space 'Block_design_i_microblaze_0.Block_design_i_microblaze_0_local_memory_lmb_bram_8K_1_ADDR_SPACE', bit lane [31:0].
+//
+// Bus width = 32 bits, number of bus blocks = 1.
+
+@00000000
+    B8000000

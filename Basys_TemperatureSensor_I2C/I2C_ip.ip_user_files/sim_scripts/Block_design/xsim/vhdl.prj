@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/Block_design/ip/Block_design_PmodTMP3_0_0/src/PmodTMP3_axi_iic_0_0/sim/PmodTMP3_axi_iic_0_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_microblaze_0_0/sim/Block_design_microblaze_0_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_dlmb_v10_0/sim/Block_design_dlmb_v10_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_ilmb_v10_0/sim/Block_design_ilmb_v10_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_dlmb_bram_if_cntlr_0/sim/Block_design_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_ilmb_bram_if_cntlr_0/sim/Block_design_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_mdm_1_0/sim/Block_design_mdm_1_0.vhd" \
+"../../../bd/Block_design/ip/Block_design_rst_clk_wiz_1_100M_0/sim/Block_design_rst_clk_wiz_1_100M_0.vhd" \
+
+nosort
