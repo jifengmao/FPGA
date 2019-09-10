@@ -1,0 +1,814 @@
+
+*** Running vivado
+    with args -log PmodACL_Demo.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source PmodACL_Demo.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source PmodACL_Demo.tcl -notrace
+Command: link_design -top PmodACL_Demo -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:255]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:255]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:256]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:256]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:258]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:258]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:259]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:259]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:261]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:261]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:262]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:262]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:264]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:264]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:265]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:265]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:267]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:267]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:268]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:268]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:270]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:270]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:271]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:271]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:273]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:273]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:274]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:274]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:276]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:276]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:277]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:277]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:279]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:279]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:280]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:280]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:282]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:282]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:283]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:283]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:285]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:285]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:286]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:286]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:288]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:288]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:289]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:289]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:291]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:291]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:292]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:292]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:294]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:294]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:295]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:295]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:303]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:303]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:304]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:304]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:310]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:310]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:311]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:311]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:312]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:312]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:314]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:314]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:315]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:315]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:316]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:316]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 604.828 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 90 Warnings, 90 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 608.836 ; gain = 324.977
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.869 . Memory (MB): peak = 618.258 ; gain = 9.422
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2246cf12c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1171.270 ; gain = 553.012
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 2246cf12c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 24c67ef95
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 65 cells and removed 242 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1bb6a743e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.274 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 126 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1bb6a743e
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.302 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 135f06521
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.410 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 135f06521
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.422 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |              65  |             242  |                                              0  |
+|  Sweep                        |               0  |             126  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 135f06521
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.429 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 135f06521
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 135f06521
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 135f06521
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 90 Warnings, 90 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1267.066 ; gain = 658.230
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/PmodACL_Demo_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file PmodACL_Demo_drc_opted.rpt -pb PmodACL_Demo_drc_opted.pb -rpx PmodACL_Demo_drc_opted.rpx
+Command: report_drc -file PmodACL_Demo_drc_opted.rpt -pb PmodACL_Demo_drc_opted.pb -rpx PmodACL_Demo_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/PmodACL_Demo_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: bf158a14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1b087ff94
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.744 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 204046e1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.997 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 204046e1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 204046e1b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 268f0c7bf
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            0  |              0  |                     0  |           0  |           2  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 2ab08a5e6
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1cd2911da
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1cd2911da
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2b1e6c457
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2c2c52b3b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 23d91c6c4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 214244af8
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 18375a3f9
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 204222218
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 204222218
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1a38176ae
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a38176ae
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.114. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 21f52de43
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 21f52de43
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 21f52de43
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 21f52de43
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: 147524a79
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 147524a79
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Ending Placer Task | Checksum: 7e7c0b84
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+50 Infos, 90 Warnings, 90 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/PmodACL_Demo_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file PmodACL_Demo_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1267.066 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file PmodACL_Demo_utilization_placed.rpt -pb PmodACL_Demo_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file PmodACL_Demo_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1267.066 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 7858511b ConstDB: 0 ShapeSum: 623ba69 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 440e76d2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1379.172 ; gain = 112.105
+Post Restoration Checksum: NetGraph: 5195af6 NumContArr: 3ef51bdc Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 440e76d2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1411.453 ; gain = 144.387
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 440e76d2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1417.480 ; gain = 150.414
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 440e76d2
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:20 . Memory (MB): peak = 1417.480 ; gain = 150.414
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1cc7800ce
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1429.125 ; gain = 162.059
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.139  | TNS=0.000  | WHS=-0.141 | THS=-9.609 |
+
+Phase 2 Router Initialization | Checksum: 203c36af6
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1c820693b
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.698  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1b9e9aad4
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.698  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1188449de
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+Phase 4 Rip-up And Reroute | Checksum: 1188449de
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1188449de
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1188449de
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+Phase 5 Delay and Skew Optimization | Checksum: 1188449de
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 834effd9
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.706  | TNS=0.000  | WHS=0.100  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 121c733df
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+Phase 6 Post Hold Fix | Checksum: 121c733df
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.195248 %
+  Global Horizontal Routing Utilization  = 0.14771 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: eeecf643
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: eeecf643
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: e4d359ba
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=5.706  | TNS=0.000  | WHS=0.100  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: e4d359ba
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 1429.125 ; gain = 162.059
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+68 Infos, 90 Warnings, 90 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 1429.125 ; gain = 162.059
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.125 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1429.125 ; gain = 0.000
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1429.125 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/PmodACL_Demo_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file PmodACL_Demo_drc_routed.rpt -pb PmodACL_Demo_drc_routed.pb -rpx PmodACL_Demo_drc_routed.rpx
+Command: report_drc -file PmodACL_Demo_drc_routed.rpt -pb PmodACL_Demo_drc_routed.pb -rpx PmodACL_Demo_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/PmodACL_Demo_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file PmodACL_Demo_methodology_drc_routed.rpt -pb PmodACL_Demo_methodology_drc_routed.pb -rpx PmodACL_Demo_methodology_drc_routed.rpx
+Command: report_methodology -file PmodACL_Demo_methodology_drc_routed.rpt -pb PmodACL_Demo_methodology_drc_routed.pb -rpx PmodACL_Demo_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/PmodACL_Demo_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file PmodACL_Demo_power_routed.rpt -pb PmodACL_Demo_power_summary_routed.pb -rpx PmodACL_Demo_power_routed.rpx
+Command: report_power -file PmodACL_Demo_power_routed.rpt -pb PmodACL_Demo_power_summary_routed.pb -rpx PmodACL_Demo_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+80 Infos, 90 Warnings, 90 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file PmodACL_Demo_route_status.rpt -pb PmodACL_Demo_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file PmodACL_Demo_timing_summary_routed.rpt -pb PmodACL_Demo_timing_summary_routed.pb -rpx PmodACL_Demo_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file PmodACL_Demo_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file PmodACL_Demo_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file PmodACL_Demo_bus_skew_routed.rpt -pb PmodACL_Demo_bus_skew_routed.pb -rpx PmodACL_Demo_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force PmodACL_Demo.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 14153312 bits.
+Writing bitstream ./PmodACL_Demo.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] 'C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Mon Sep  9 20:36:34 2019. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+100 Infos, 90 Warnings, 90 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1855.855 ; gain = 398.258
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 20:36:34 2019...

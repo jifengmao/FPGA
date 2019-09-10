@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1568086474">
+  <File Type="BITSTR-BMM" Name="PmodACL_Demo_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="PmodACL_Demo_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="PmodACL_Demo_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="PmodACL_Demo_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="PmodACL_Demo.tcl"/>
+  <File Type="OPT-TIMING" Name="PmodACL_Demo_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="PmodACL_Demo_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="PmodACL_Demo_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="PmodACL_Demo_reports.tcl"/>
+  <File Type="OPT-DRC" Name="PmodACL_Demo_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="PmodACL_Demo.hwdef"/>
+  <File Type="PWROPT-DCP" Name="PmodACL_Demo_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="PmodACL_Demo_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="PmodACL_Demo_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="PmodACL_Demo_placed.dcp"/>
+  <File Type="PLACE-IO" Name="PmodACL_Demo_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="PmodACL_Demo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="PmodACL_Demo_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="PmodACL_Demo_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="PmodACL_Demo_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="PmodACL_Demo_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="PmodACL_Demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="PmodACL_Demo.bgn"/>
+  <File Type="PLACE-TIMING" Name="PmodACL_Demo_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="PmodACL_Demo_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="PmodACL_Demo.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="PmodACL_Demo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="PmodACL_Demo_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="PmodACL_Demo_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="PmodACL_Demo.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="PmodACL_Demo_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="PmodACL_Demo_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="PmodACL_Demo_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="PmodACL_Demo_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="PmodACL_Demo_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="PmodACL_Demo_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="PmodACL_Demo.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="PmodACL_Demo_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="PmodACL_Demo.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="PmodACL_Demo_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PmodACL_Demo_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="PmodACL_Demo.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PmodACL_Demo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="PmodACL_Demo_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="PmodACL_Demo_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="PmodACL_Demo_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="PmodACL_Demo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="PmodACL_Demo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="PmodACL_Demo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="PmodACL_Demo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="PmodACL_Demo_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="PmodACL_Demo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="PmodACL_Demo_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="PmodACL_Demo_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PmodACL_Demo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PmodACL_Demo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PmodACL_Demo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PmodACL_Demo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PmodACL_Demo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PmodACL_Demo_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PmodACL_Demo_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="PmodACL_Demo.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PmodACL_Demo_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="PmodACL_Demo.rbt"/>
+  <File Type="BITSTR-NKY" Name="PmodACL_Demo.nky"/>
+  <File Type="BG-DRC" Name="PmodACL_Demo.drc"/>
+  <File Type="RDI-RDI" Name="PmodACL_Demo.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/Div/Div.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/binary_to_bcd.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/spimaster.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/spiinterface.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/slaveselect.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/format_data.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/ssdctrl.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/spicomponent.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/sel_data.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/clkdiv_5hz.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../PmodACL_Example/pmodacl_demo.v">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/import_ise_summary.txt"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PmodACL_Demo"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/FPGA_Projects/Basys_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys_SCL/Basys_SCL.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1566142954"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

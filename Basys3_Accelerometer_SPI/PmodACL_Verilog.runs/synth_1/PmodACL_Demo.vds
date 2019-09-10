@@ -1,0 +1,721 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Sep  9 20:34:37 2019
+# Process ID: 10584
+# Current directory: C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/synth_1
+# Command line: vivado.exe -log PmodACL_Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodACL_Demo.tcl
+# Log file: C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/synth_1/PmodACL_Demo.vds
+# Journal file: C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PmodACL_Demo.tcl -notrace
+Command: synth_design -top PmodACL_Demo -part xc7a35tcpg236-1
+Starting synth_design
+WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
+C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/sources_1/ip/Div/Div.xco
+
+INFO: [IP_Flow 19-2162] IP 'Div' is locked:
+* IP definition 'Divider Generator (3.0)' for IP 'Div' has a newer major version in the IP Catalog.
+* Current project part 'xc7a35tcpg236-1' and the part 'xc6slx16csg324-3' used to customize the IP 'Div' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28804 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 395.023 ; gain = 103.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PmodACL_Demo' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/pmodacl_demo.v:66]
+INFO: [Synth 8-6157] synthesizing module 'sel_Data' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/sel_data.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'sel_Data' (1#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/sel_data.v:22]
+INFO: [Synth 8-6157] synthesizing module 'SPIcomponent' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spicomponent.v:41]
+INFO: [Synth 8-6157] synthesizing module 'SPImaster' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spimaster.v:41]
+	Parameter state_type_idle bound to: 3'b000 
+	Parameter state_type_configure bound to: 3'b001 
+	Parameter state_type_transmitting bound to: 3'b010 
+	Parameter state_type_recieving bound to: 3'b011 
+	Parameter state_type_finished bound to: 3'b100 
+	Parameter state_type_break bound to: 3'b101 
+	Parameter state_type_holding bound to: 3'b110 
+	Parameter data_type_x_axis bound to: 2'b00 
+	Parameter data_type_y_axis bound to: 2'b01 
+	Parameter data_type_z_axis bound to: 2'b10 
+	Parameter configure_type_powerCtl bound to: 2'b00 
+	Parameter configure_type_bwRate bound to: 2'b01 
+	Parameter configure_type_dataFormat bound to: 2'b10 
+	Parameter POWER_CTL bound to: 16'b0010110100001000 
+	Parameter BW_RATE bound to: 16'b0010110000001000 
+	Parameter DATA_FORMAT bound to: 16'b0011000100000000 
+	Parameter xAxis0 bound to: 16'b1011001000000000 
+	Parameter xAxis1 bound to: 16'b1011001100000000 
+	Parameter yAxis0 bound to: 16'b1011010000000000 
+	Parameter yAxis1 bound to: 16'b1011010100000000 
+	Parameter zAxis0 bound to: 16'b1011011000000000 
+	Parameter zAxis1 bound to: 16'b1011011100000000 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spimaster.v:157]
+INFO: [Synth 8-6155] done synthesizing module 'SPImaster' (2#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spimaster.v:41]
+INFO: [Synth 8-6157] synthesizing module 'SPIinterface' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spiinterface.v:38]
+	Parameter CLKDIVIDER bound to: 8'b11111111 
+	Parameter TxType_idle bound to: 2'b00 
+	Parameter TxType_transmitting bound to: 2'b01 
+	Parameter RxType_idle bound to: 2'b00 
+	Parameter RxType_recieving bound to: 2'b01 
+	Parameter SCLKType_idle bound to: 2'b00 
+	Parameter SCLKType_running bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spiinterface.v:117]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spiinterface.v:166]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spiinterface.v:214]
+INFO: [Synth 8-6155] done synthesizing module 'SPIinterface' (3#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spiinterface.v:38]
+INFO: [Synth 8-6157] synthesizing module 'slaveSelect' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/slaveselect.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'slaveSelect' (4#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/slaveselect.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'SPIcomponent' (5#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/spicomponent.v:41]
+INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/ssdctrl.v:29]
+	Parameter cntEndVal bound to: 16'b1100001101010000 
+INFO: [Synth 8-6157] synthesizing module 'Format_Data' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/format_data.v:27]
+	Parameter DIVISOR bound to: 8'b10100011 
+	Parameter SCALING bound to: 7'b1000000 
+INFO: [Synth 8-6157] synthesizing module 'Div' [c:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/sources_1/ip/Div/Div.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/binary_to_bcd.v:29]
+	Parameter state_type_Idle bound to: 3'b000 
+	Parameter state_type_Init bound to: 3'b001 
+	Parameter state_type_Shift bound to: 3'b010 
+	Parameter state_type_Check bound to: 3'b011 
+	Parameter state_type_Done bound to: 3'b100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/binary_to_bcd.v:95]
+WARNING: [Synth 8-5788] Register shiftCount_reg in module Binary_To_BCD is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/binary_to_bcd.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'Binary_To_BCD' (6#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/binary_to_bcd.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Format_Data' (7#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/format_data.v:27]
+INFO: [Synth 8-226] default block is never used [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/ssdctrl.v:98]
+INFO: [Synth 8-226] default block is never used [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/ssdctrl.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'ssdCtrl' (8#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/ssdctrl.v:29]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_5Hz' [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/clkdiv_5hz.v:20]
+	Parameter cntEndVal bound to: 24'b100110001001011010000000 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (9#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/clkdiv_5hz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodACL_Demo' (10#1) [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Example/pmodacl_demo.v:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 450.418 ; gain = 158.953
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 450.418 ; gain = 158.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 450.418 ; gain = 158.953
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:255]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:256]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:258]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:259]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:261]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:262]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:264]
+WARNING: [Vivado 12-584] No ports matched 'VGA_RED[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:265]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:267]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:268]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:270]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:271]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:273]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:274]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:276]
+WARNING: [Vivado 12-584] No ports matched 'VGA_BLUE[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:277]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:279]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[0]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:280]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:282]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[1]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:283]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:285]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[2]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:286]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:288]
+WARNING: [Vivado 12-584] No ports matched 'VGA_GREEN[3]'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:289]
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:291]
+WARNING: [Vivado 12-584] No ports matched 'VGA_HS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:292]
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:294]
+WARNING: [Vivado 12-584] No ports matched 'VGA_VS'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:295]
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:303]
+WARNING: [Vivado 12-584] No ports matched 'UART_TXD'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:304]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:310]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:311]
+WARNING: [Vivado 12-584] No ports matched 'PS2_CLK'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:312]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:314]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:315]
+WARNING: [Vivado 12-584] No ports matched 'PS2_DATA'. [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc:316]
+Finished Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/PmodACL_Demo_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/constrs_1/imports/FPGA_Projects/Basys_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PmodACL_Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PmodACL_Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 788.621 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.621 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 788.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 788.621 ; gain = 497.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 788.621 ; gain = 497.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for Disp/FDATA/Division. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 788.621 ; gain = 497.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'SPImaster'
+INFO: [Synth 8-802] inferred FSM for state register 'DATA_reg' in module 'SPImaster'
+INFO: [Synth 8-802] inferred FSM for state register 'CONFIGUREsel_reg' in module 'SPImaster'
+INFO: [Synth 8-5546] ROM "sample_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "hold_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "break_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "STATE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transmit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transmit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CONFIGUREsel" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txdata" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "finish" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'TxSTATE_reg' in module 'SPIinterface'
+INFO: [Synth 8-802] inferred FSM for state register 'RxSTATE_reg' in module 'SPIinterface'
+INFO: [Synth 8-802] inferred FSM for state register 'SCLKSTATE_reg' in module 'SPIinterface'
+INFO: [Synth 8-5544] ROM "tx_shift_register" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TxSTATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "sck_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sck_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'Binary_To_BCD'
+INFO: [Synth 8-5544] ROM "shiftCount" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BCDOUT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NSTATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "DCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKOUT" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+ configure_type_powerCtl |                              001 |                               00
+   configure_type_bwRate |                              010 |                               01
+configure_type_dataFormat |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CONFIGUREsel_reg' using encoding 'one-hot' in module 'SPImaster'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        data_type_x_axis |                              001 |                               00
+        data_type_y_axis |                              010 |                               01
+        data_type_z_axis |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'DATA_reg' using encoding 'one-hot' in module 'SPImaster'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         state_type_idle |                              000 |                              000
+ state_type_transmitting |                              001 |                              010
+    state_type_recieving |                              010 |                              011
+     state_type_finished |                              011 |                              100
+        state_type_break |                              100 |                              101
+      state_type_holding |                              101 |                              110
+    state_type_configure |                              110 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'SPImaster'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           SCLKType_idle |                                0 |                               00
+        SCLKType_running |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'SCLKSTATE_reg' using encoding 'sequential' in module 'SPIinterface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             RxType_idle |                                0 |                               00
+        RxType_recieving |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'RxSTATE_reg' using encoding 'sequential' in module 'SPIinterface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             TxType_idle |                                0 |                               00
+     TxType_transmitting |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'TxSTATE_reg' using encoding 'sequential' in module 'SPIinterface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         state_type_Idle |                            00001 |                              000
+         state_type_Init |                            00010 |                              001
+        state_type_Shift |                            00100 |                              010
+        state_type_Check |                            01000 |                              011
+         state_type_Done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'one-hot' in module 'Binary_To_BCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 788.621 ; gain = 497.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     28 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 6     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 3     
+	   7 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 41    
+	   7 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sel_Data 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+Module SPImaster 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 3     
+	   7 Input     10 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 9     
+	   7 Input      1 Bit        Muxes := 15    
+Module SPIinterface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 29    
+Module slaveSelect 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Binary_To_BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     28 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module ssdCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ClkDiv_5Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "SPI/C1/done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SPI/C1/TxSTATE" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SPI/C1/tx_shift_register" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "SPI/C0/sample_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SPI/C1/sck_buffer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SPI/C1/sck_previous" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Disp/DCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "genStart/CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[0]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[1]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[2]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[3]' (FDRE) to 'SPI/C0/txdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[4]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[5]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[6]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'SPI/C0/txdata_reg[7]' (FDRE) to 'SPI/C0/txdata_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SPI/C0/txdata_reg[14] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 788.621 ; gain = 497.156
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 788.621 ; gain = 497.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 796.602 ; gain = 505.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |Div           |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |Div_bbox_0 |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |    18|
+|4     |LUT1       |     5|
+|5     |LUT2       |    78|
+|6     |LUT3       |    56|
+|7     |LUT4       |    49|
+|8     |LUT5       |    41|
+|9     |LUT6       |    78|
+|10    |FDCE       |    84|
+|11    |FDPE       |     6|
+|12    |FDRE       |   153|
+|13    |FDSE       |     6|
+|14    |IBUF       |     5|
+|15    |OBUF       |    18|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------+--------------+------+
+|      |Instance     |Module        |Cells |
++------+-------------+--------------+------+
+|1     |top          |              |   622|
+|2     |  Disp       |ssdCtrl       |   169|
+|3     |    FDATA    |Format_Data   |   123|
+|4     |      BtoBCD |Binary_To_BCD |    99|
+|5     |  SDATA      |sel_Data      |    17|
+|6     |  SPI        |SPIcomponent  |   349|
+|7     |    C0       |SPImaster     |   244|
+|8     |    C1       |SPIinterface  |   104|
+|9     |    C2       |slaveSelect   |     1|
+|10    |  genStart   |ClkDiv_5Hz    |    63|
++------+-------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 799.047 ; gain = 169.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 799.047 ; gain = 507.582
+INFO: [Project 1-571] Translating synthesized netlist
+Release 14.7 - ngc2edif P_INT.20180726 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Div.ngc ...
+WARNING:NetListWriters:298 - No output is written to Div.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file Div.edif ...
+ngc2edif: Total memory usage is 4321864 kilobytes
+
+Reading core file 'c:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.srcs/sources_1/ip/Div/Div.ngc' for (cell view 'Div', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Div_ngc_1b44650c.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Div_ngc_1b44650c.edif]
+INFO: [Netlist 29-17] Analyzing 878 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20180726
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 620 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 48 instances
+  FD => FDRE: 528 instances
+  INV => LUT1: 35 instances
+  MULT_AND => LUT2: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 93 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 804.922 ; gain = 522.320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 804.922 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maoji/Work/FPGA_Projects/Basys_ACL/Pmod_Verilog/PmodACL_Verilog/PmodACL_Verilog.runs/synth_1/PmodACL_Demo.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PmodACL_Demo_utilization_synth.rpt -pb PmodACL_Demo_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  9 20:35:18 2019...

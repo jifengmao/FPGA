@@ -1,0 +1,98 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Sep  9 20:35:56 2019
+| Host         : DESKTOP-DTAJENL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file PmodACL_Demo_control_sets_placed.rpt
+| Design       : PmodACL_Demo
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    73 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            2 |
+|      2 |            1 |
+|      4 |            5 |
+|      5 |            1 |
+|      7 |            1 |
+|      8 |            5 |
+|     11 |            1 |
+|     12 |            3 |
+|     13 |            1 |
+|     15 |            1 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             271 |           62 |
+| No           | No                    | Yes                    |              54 |           19 |
+| No           | Yes                   | No                     |              42 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              36 |            9 |
+| Yes          | Yes                   | No                     |             108 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------------------+-----------------------------------------+------------------+----------------+
+|    Clock Signal    |                  Enable Signal                 |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------------+------------------------------------------------+-----------------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG     | SPI/C1/sdo_i_1_n_0                             | RST_IBUF                                |                1 |              1 |
+|  CLK_IBUF_BUFG     | SPI/C1/done_reg_1                              | RST_IBUF                                |                1 |              1 |
+|  Disp/DCLK_reg_n_0 |                                                |                                         |                1 |              2 |
+|  CLK_IBUF_BUFG     | Disp/FDATA/BtoBCD/tmpSR[15]_i_1_n_0            | RST_IBUF                                |                1 |              4 |
+|  CLK_IBUF_BUFG     | Disp/FDATA/BtoBCD/tmpSR[19]_i_1_n_0            | RST_IBUF                                |                1 |              4 |
+|  CLK_IBUF_BUFG     | Disp/FDATA/BtoBCD/tmpSR[23]_i_1_n_0            | RST_IBUF                                |                1 |              4 |
+|  CLK_IBUF_BUFG     | SPI/C1/rx_count[3]_i_1_n_0                     | RST_IBUF                                |                1 |              4 |
+|  CLK_IBUF_BUFG     | SPI/C1/tx_count[3]_i_1_n_0                     | RST_IBUF                                |                1 |              4 |
+|  CLK_IBUF_BUFG     | Disp/FDATA/BtoBCD/shiftCount[4]_i_2_n_0        | Disp/FDATA/BtoBCD/shiftCount[4]_i_1_n_0 |                1 |              5 |
+|  CLK_IBUF_BUFG     | SPI/C0/txdata[15]_i_1_n_0                      | RST_IBUF                                |                2 |              7 |
+|  CLK_IBUF_BUFG     | SPI/C0/x_axis_data[7]                          | RST_IBUF                                |                1 |              8 |
+|  CLK_IBUF_BUFG     | SPI/C0/y_axis_data[7]                          | RST_IBUF                                |                1 |              8 |
+|  CLK_IBUF_BUFG     | SPI/C0/z_axis_data[7]                          | RST_IBUF                                |                1 |              8 |
+|  CLK_IBUF_BUFG     | SPI/C1/clk_count[7]_i_1_n_0                    | RST_IBUF                                |                3 |              8 |
+|  CLK_IBUF_BUFG     | SPI/C1/rx_shift_register                       | RST_IBUF                                |                1 |              8 |
+|  Disp/DCLK_reg_n_0 |                                                | RST_IBUF                                |                4 |             11 |
+|  CLK_IBUF_BUFG     | SPI/C0/break_count_0                           | RST_IBUF                                |                3 |             12 |
+|  CLK_IBUF_BUFG     | Disp/FDATA/BtoBCD/FSM_onehot_STATE_reg_n_0_[4] | RST_IBUF                                |                4 |             12 |
+|  CLK_IBUF_BUFG     | Disp/FDATA/BtoBCD/tmpSR[11]_i_1_n_0            | RST_IBUF                                |                2 |             12 |
+|  CLK_IBUF_BUFG     | SPI/C1/tx_shift_register[15]_i_1_n_0           | RST_IBUF                                |                2 |             13 |
+|  CLK_IBUF_BUFG     |                                                | Disp/clkCount[15]_i_1__0_n_0            |                4 |             15 |
+|  CLK_IBUF_BUFG     | SPI/C0/hold_count[20]_i_1_n_0                  | RST_IBUF                                |                6 |             21 |
+|  CLK_IBUF_BUFG     |                                                | RST_IBUF                                |               26 |             70 |
+|  CLK_IBUF_BUFG     |                                                |                                         |               61 |            269 |
++--------------------+------------------------------------------------+-----------------------------------------+------------------+----------------+
+
+

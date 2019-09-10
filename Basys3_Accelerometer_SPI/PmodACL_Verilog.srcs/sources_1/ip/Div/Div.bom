@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<BillOfMaterials Version="1" Minor="2">
+	<IPInstance name="Div">
+		<FileSets>
+			<FileSet generator="xmdf_to_bom">
+				<File name="Div.asy" type="asy" timestamp="Fri Aug 03 22:41:23 2012" checksum="0">
+				</File>
+				<File name="Div.ngc" type="ngc" timestamp="Fri Aug 03 22:41:20 2012" checksum="0">
+				</File>
+				<File name="Div.sym" type="asy" timestamp="Fri Aug 03 22:41:24 2012" checksum="0">
+				</File>
+				<File name="Div.v" type="verilog" timestamp="Fri Aug 03 22:41:22 2012" checksum="0">
+				</File>
+				<File name="Div.veo" type="veo" timestamp="Fri Aug 03 22:41:22 2012" checksum="0">
+				</File>
+				<File name="Div.xco" type="xco" timestamp="Fri Aug 03 22:39:37 2012" checksum="0">
+				</File>
+				<File name="Div_xmdf.tcl" type="ignore" timestamp="Fri Aug 03 22:41:24 2012" checksum="0">
+				</File>
+			</FileSet>
+		</FileSets>
+	</IPInstance>
+</BillOfMaterials>
+
