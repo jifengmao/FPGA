@@ -1,0 +1,1170 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'maoji' on host 'desktop-dtajenl' (Windows NT_amd64 version 6.2) on Thu Sep 12 08:22:22 -0700 2019
+INFO: [HLS 200-10] In directory 'C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project'
+INFO: [HLS 200-10] Opening project 'C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.67ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 08:22:31 2019...
+
+C:\Users\maoji\Work\FPGA_Projects\VideoImage_process\PCam_5C_Demo\WorkShop2\zyboz7_workshop\hls_project\edge_detect\solution2\impl\verilog>C:/Xilinx/Vivado/2017.4/bin/vivado  -notrace -mode batch -source run_vivadosyn.tcl   || exit $? 
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_vivadosyn.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog'
+[Thu Sep 12 08:22:38 2019] Launched synth_1...
+Run output will be captured here: C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/project.runs/synth_1/runme.log
+[Thu Sep 12 08:22:38 2019] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log edge_detect.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source edge_detect.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source edge_detect.tcl -notrace
+Command: synth_design -top edge_detect -part xc7z020clg400-1 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8740 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 349.898 ; gain = 104.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'edge_detect' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect.v:12]
+INFO: [Synth 8-638] synthesizing module 'AXIvideo2Mat' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp2_stage0 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state10 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/AXIvideo2Mat.v:89]
+INFO: [Synth 8-256] done synthesizing module 'AXIvideo2Mat' (1#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-638] synthesizing module 'CvtColor' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state9 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:88]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mul_mbkb' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mul_mbkb.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mul_mbkb_DSP48_0' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mul_mbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mul_mbkb_DSP48_0' (2#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mul_mbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mul_mbkb' (3#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mul_mbkb.v:14]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mcud' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mcud.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mcud_DSP48_1' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mcud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mcud_DSP48_1' (4#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mcud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mcud' (5#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mcud.v:34]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mdEe' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mdEe.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mac_mdEe_DSP48_2' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mdEe.v:10]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mdEe_DSP48_2' (6#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mdEe.v:10]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mac_mdEe' (7#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mdEe.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:652]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor' (8#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:10]
+INFO: [Synth 8-638] synthesizing module 'Sobel' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Sobel.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Sobel.v:86]
+INFO: [Synth 8-638] synthesizing module 'Filter2D' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
+	Parameter ap_ST_fsm_state2 bound to: 6'b000010 
+	Parameter ap_ST_fsm_state3 bound to: 6'b000100 
+	Parameter ap_ST_fsm_state4 bound to: 6'b001000 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b010000 
+	Parameter ap_ST_fsm_state11 bound to: 6'b100000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:79]
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_eOg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D_k_buf_0_eOg.v:54]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressRange bound to: 1280 - type: integer 
+	Parameter AddressWidth bound to: 11 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Filter2D_k_buf_0_eOg_ram' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D_k_buf_0_eOg.v:9]
+	Parameter DWIDTH bound to: 8 - type: integer 
+	Parameter AWIDTH bound to: 11 - type: integer 
+	Parameter MEM_SIZE bound to: 1280 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D_k_buf_0_eOg.v:24]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_eOg_ram' (9#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D_k_buf_0_eOg.v:9]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D_k_buf_0_eOg' (10#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D_k_buf_0_eOg.v:54]
+INFO: [Synth 8-638] synthesizing module 'edge_detect_mux_3ncg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mux_3ncg.v:11]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 8 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter din3_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'edge_detect_mux_3ncg' (11#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mux_3ncg.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1860]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1862]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1864]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1866]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1868]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1870]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1872]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1874]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1876]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1962]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1964]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1966]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1968]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1970]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1972]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1976]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1980]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2026]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2028]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2030]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2032]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2034]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2036]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2038]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2040]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2042]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2044]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2136]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2150]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2160]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2164]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2174]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2176]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2184]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2188]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2250]
+INFO: [Synth 8-256] done synthesizing module 'Filter2D' (12#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Sobel' (13#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Sobel.v:10]
+INFO: [Synth 8-638] synthesizing module 'CvtColor_1' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor_1.v:88]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor_1' (14#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor_1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mat2AXIvideo' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:77]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_dest_V_1_sel_rd_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:256]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_id_V_1_sel_rd_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:282]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_keep_V_1_sel_rd_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:308]
+WARNING: [Synth 8-6014] Unused sequential element AXI_video_strm_V_strb_V_1_sel_rd_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:370]
+INFO: [Synth 8-256] done synthesizing module 'Mat2AXIvideo' (15#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (16#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (17#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColoocq' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColoocq.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColoocq_shiftReg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColoocq.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColoocq_shiftReg' (18#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColoocq.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColoocq' (19#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColoocq.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_Sobel_U0' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Sobel_U0.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_Sobel_U0_shiftReg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Sobel_U0.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Sobel_U0_shiftReg' (20#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Sobel_U0.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Sobel_U0' (21#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Sobel_U0.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColopcA' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColopcA.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColopcA_shiftReg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColopcA.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColopcA_shiftReg' (22#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColopcA.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColopcA' (23#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_CvtColopcA.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIqcK' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Mat2AXIqcK.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIqcK_shiftReg' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Mat2AXIqcK.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIqcK_shiftReg' (24#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Mat2AXIqcK.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIqcK' (25#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/start_for_Mat2AXIqcK.v:45]
+INFO: [Synth 8-256] done synthesizing module 'edge_detect' (26#1) [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect.v:12]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[0]
+WARNING: [Synth 8-3331] design Filter2D_k_buf_0_eOg has unconnected port reset
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TDEST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 413.914 ; gain = 168.637
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 413.914 ; gain = 168.637
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect.xdc]
+Finished Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 783.625 ; gain = 0.371
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 783.625 ; gain = 538.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 783.625 ; gain = 538.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 783.625 ; gain = 538.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond5_fu_290_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_302_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_3_reg_166_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/AXIvideo2Mat.v:499]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element j_reg_142_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:330]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_4_addr_reg_2583_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1169]
+INFO: [Synth 8-4471] merging register 'k_buf_0_val_5_addr_reg_2589_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1170]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_3_addr_reg_2595_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:592]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_4_addr_reg_2601_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1172]
+INFO: [Synth 8-4471] merging register 'k_buf_1_val_5_addr_reg_2607_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1173]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_3_addr_reg_2613_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:640]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_4_addr_reg_2619_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1175]
+INFO: [Synth 8-4471] merging register 'k_buf_2_val_5_addr_reg_2625_reg[10:0]' into 'k_buf_0_val_3_addr_reg_2577_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1176]
+INFO: [Synth 8-4471] merging register 'tmp_68_reg_2792_reg[0:0]' into 'tmp_54_reg_2755_reg[0:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2070]
+INFO: [Synth 8-4471] merging register 'tmp_86_reg_2829_reg[0:0]' into 'tmp_54_reg_2755_reg[0:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2086]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_k_buf_0_val_5_addr_reg_2589_reg[10:0]' into 'ap_reg_pp0_iter2_k_buf_0_val_4_addr_reg_2583_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:576]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_k_buf_1_val_4_addr_reg_2601_reg[10:0]' into 'ap_reg_pp0_iter2_k_buf_0_val_4_addr_reg_2583_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:608]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_k_buf_1_val_5_addr_reg_2607_reg[10:0]' into 'ap_reg_pp0_iter2_k_buf_0_val_4_addr_reg_2583_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:624]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_k_buf_2_val_4_addr_reg_2619_reg[10:0]' into 'ap_reg_pp0_iter2_k_buf_0_val_4_addr_reg_2583_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:656]
+INFO: [Synth 8-4471] merging register 'ap_reg_pp0_iter2_k_buf_2_val_5_addr_reg_2625_reg[10:0]' into 'ap_reg_pp0_iter2_k_buf_0_val_4_addr_reg_2583_reg[10:0]' [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:672]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_k_buf_0_val_5_addr_reg_2589_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:576]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_k_buf_1_val_4_addr_reg_2601_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:608]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_k_buf_1_val_5_addr_reg_2607_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:624]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_k_buf_2_val_4_addr_reg_2619_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:656]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_k_buf_2_val_5_addr_reg_2625_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:672]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_4_addr_reg_2583_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1169]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_0_val_5_addr_reg_2589_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1170]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_3_addr_reg_2595_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:592]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_4_addr_reg_2601_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1172]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_1_val_5_addr_reg_2607_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1173]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_3_addr_reg_2613_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:640]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_4_addr_reg_2619_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1175]
+WARNING: [Synth 8-6014] Unused sequential element k_buf_2_val_5_addr_reg_2625_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1176]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2052]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2066]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2080]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2052]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2066]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2080]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ImagLoc_x_reg_2520_reg' and it is trimmed from '12' to '11' bits. [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1068]
+WARNING: [Synth 8-3936] Found unconnected internal register 'p_assign_2_reg_2550_reg' and it is trimmed from '14' to '11' bits. [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1072]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2052]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2066]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:2080]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond390_i_fu_553_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tmp_7_fu_543_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond389_i_fu_864_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_116_0_1_fu_599_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_2_fu_593_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_2_reg_505_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1044]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element j_reg_121_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor_1.v:199]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exitcond4_fu_168_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_192_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_1_reg_152_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:490]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 783.625 ; gain = 538.348
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 19    
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 8     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   5 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 20    
++---XORs : 
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 2     
+	               24 Bit    Registers := 8     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 14    
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 113   
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 34    
+	                1 Bit    Registers := 138   
++---RAMs : 
+	              10K Bit         RAMs := 9     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 14    
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 76    
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 22    
+	   4 Input      2 Bit        Muxes := 11    
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 138   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 13    
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 28    
+Module CvtColor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module Filter2D_k_buf_0_eOg_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              10K Bit         RAMs := 1     
+Module edge_detect_mux_3ncg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module Filter2D 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 15    
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 3     
+	   5 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 4     
++---XORs : 
+	   2 Input      2 Bit         XORs := 6     
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 10    
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 72    
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 27    
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 8     
+Module Sobel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module CvtColor_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 17    
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_CvtColoocq_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColoocq 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Sobel_U0_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Sobel_U0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_CvtColopcA_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_CvtColopcA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_Mat2AXIqcK_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module start_for_Mat2AXIqcK 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "data41" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond_fu_302_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond5_fu_290_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_3_reg_166_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/AXIvideo2Mat.v:499]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_tmp_102_reg_297_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:345]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter3_tmp_102_reg_297_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:348]
+WARNING: [Synth 8-6014] Unused sequential element tmp_103_reg_302_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:388]
+WARNING: [Synth 8-6014] Unused sequential element ap_reg_pp0_iter2_tmp_103_reg_302_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:346]
+WARNING: [Synth 8-6014] Unused sequential element r_V_i_reg_307_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:202]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:202]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:202]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mdEe.v:26]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect_mac_mdEe.v:26]
+WARNING: [Synth 8-6014] Unused sequential element j_reg_142_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor.v:330]
+DSP Report: Generating DSP edge_detect_mul_mbkb_U11/edge_detect_mul_mbkb_DSP48_0_U/in00, operation Mode is: A*B.
+DSP Report: operator edge_detect_mul_mbkb_U11/edge_detect_mul_mbkb_DSP48_0_U/in00 is absorbed into DSP edge_detect_mul_mbkb_U11/edge_detect_mul_mbkb_DSP48_0_U/in00.
+DSP Report: Generating DSP p_Val2_12_reg_312_reg, operation Mode is: (C'+(A:0x74bc6)*B'')'.
+DSP Report: register B is absorbed into DSP p_Val2_12_reg_312_reg.
+DSP Report: register B is absorbed into DSP p_Val2_12_reg_312_reg.
+DSP Report: register r_V_i_reg_307_reg is absorbed into DSP p_Val2_12_reg_312_reg.
+DSP Report: register p_Val2_12_reg_312_reg is absorbed into DSP p_Val2_12_reg_312_reg.
+DSP Report: operator edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/p is absorbed into DSP p_Val2_12_reg_312_reg.
+DSP Report: operator edge_detect_mac_mcud_U12/edge_detect_mac_mcud_DSP48_1_U/m is absorbed into DSP p_Val2_12_reg_312_reg.
+DSP Report: Generating DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p, operation Mode is: C+(A:0x259168)*B''.
+DSP Report: register B is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: operator edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+DSP Report: operator edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/m is absorbed into DSP edge_detect_mac_mdEe_U13/edge_detect_mac_mdEe_DSP48_2_U/p.
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_Filter2D_fu_26/p_p2_i_i_cast_cast_reg_2540_reg' and it is trimmed from '12' to '11' bits. [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1073]
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/exitcond390_i_fu_553_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/exitcond389_i_fu_864_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/tmp_2_fu_593_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "grp_Filter2D_fu_26/tmp_116_0_1_fu_599_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element grp_Filter2D_fu_26/t_V_2_reg_505_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Filter2D.v:1044]
+WARNING: [Synth 8-6014] Unused sequential element j_reg_121_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/CvtColor_1.v:199]
+INFO: [Synth 8-5546] ROM "exitcond_fu_180_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond4_fu_168_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_last_V_fu_192_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element t_V_1_reg_152_reg was removed.  [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/Mat2AXIvideo.v:490]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_1_V_dout[0]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[7]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[6]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[5]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[4]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[3]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[2]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[1]
+WARNING: [Synth 8-3331] design CvtColor_1 has unconnected port p_src_data_stream_2_V_dout[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TKEEP[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TSTRB[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TID[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port stream_in_TDEST[0]
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_addr_reg_2577_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_49_reg_2572_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_addr_reg_2577_reg[1]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_49_reg_2572_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_p2_i_i_cast_cast_reg_2540_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/ImagLoc_x_reg_2520_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/ImagLoc_x_reg_2520_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/p_assign_2_reg_2550_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_assign_7_reg_2481_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_4_reg_2463_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/tmp_4_reg_2463_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/row_assign_9_0_1_t_reg_2486_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/tmp_10_reg_2476_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_4_reg_2463_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CvtColor_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[1]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[2]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[3]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[4]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[5]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[6]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_Val2_10_0_0_2_reg_2745_reg[7]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_53_reg_2750_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Sobel_U0/grp_Filter2D_fu_26/tmp_54_reg_2755_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CvtColor_1_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Sobel_U0/ap_done_reg_reg )
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/isneg_reg_2844_reg[0]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/tmp_57_reg_2855_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\AXIvideo2Mat_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Mat2AXIvideo_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (AXIvideo2Mat_U0/ap_done_reg_reg) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/ap_done_reg_reg) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[28]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[27]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[26]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[25]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[24]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[23]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[22]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[21]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[20]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[19]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[18]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[17]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[16]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[15]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[14]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[13]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[12]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[11]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[10]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[9]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[8]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (CvtColor_U0/r_V_1_reg_317_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_2_fu_294_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_3_fu_298_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_1_0_reg_2683_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_s_fu_282_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_1_fu_286_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_0_0_reg_2670_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_4_fu_306_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[3]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[2]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[1]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/right_border_buf_1_5_fu_310_reg[0]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_2_0_reg_2691_reg[7]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_2_0_reg_2691_reg[6]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_2_0_reg_2691_reg[5]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_2_0_reg_2691_reg[4]) is unused and will be removed from module edge_detect.
+WARNING: [Synth 8-3332] Sequential element (Sobel_U0/grp_Filter2D_fu_26/col_buf_1_val_2_0_reg_2691_reg[3]) is unused and will be removed from module edge_detect.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][0]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_1_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 783.625 ; gain = 538.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|edge_detect_mul_mbkb_DSP48_0 | A*B                   | 22     | 8      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CvtColor                     | (C'+(A:0x74bc6)*B'')' | 20     | 9      | 29     | -      | 29     | 0    | 2    | 1    | -    | -     | 0    | 1    | 
+|CvtColor                     | C+(A:0x259168)*B''    | 23     | 9      | 30     | -      | 30     | 0    | 2    | 0    | -    | -     | 0    | 0    | 
++-----------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 841.004 ; gain = 595.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 844.703 ; gain = 599.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name               | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|Filter2D_k_buf_0_eOg_ram: | ram_reg    | 2 K x 8(READ_FIRST)    | W |   | 2 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++--------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'Sobel_U0/grp_Filter2D_fu_26/p_assign_7_reg_2481_reg[10]' (FDE) to 'Sobel_U0/grp_Filter2D_fu_26/icmp_reg_2437_reg[0]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][0]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][1]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][2]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][3]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][4]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][5]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][6]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'img3_data_stream_0_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][7]' (FDE) to 'img3_data_stream_2_s_U/U_fifo_w8_d1_A_ram/SRL_SIG_reg[1][7]'
+INFO: [Synth 8-4480] The timing for the instance Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_3_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_4_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance Sobel_U0/grp_Filter2D_fu_26/k_buf_0_val_5_U/Filter2D_k_buf_0_eOg_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    18|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    52|
+|6     |LUT2      |    85|
+|7     |LUT3      |   195|
+|8     |LUT4      |   196|
+|9     |LUT5      |   192|
+|10    |LUT6      |   198|
+|11    |RAMB18E1  |     3|
+|12    |FDRE      |   906|
+|13    |FDSE      |    54|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-----------------------------+------+
+|      |Instance                             |Module                       |Cells |
++------+-------------------------------------+-----------------------------+------+
+|1     |top                                  |                             |  1902|
+|2     |  AXIvideo2Mat_U0                    |AXIvideo2Mat                 |   423|
+|3     |  CvtColor_1_U0                      |CvtColor_1                   |    80|
+|4     |  CvtColor_U0                        |CvtColor                     |   165|
+|5     |    edge_detect_mac_mdEe_U13         |edge_detect_mac_mdEe         |     4|
+|6     |      edge_detect_mac_mdEe_DSP48_2_U |edge_detect_mac_mdEe_DSP48_2 |     4|
+|7     |    edge_detect_mul_mbkb_U11         |edge_detect_mul_mbkb         |    23|
+|8     |      edge_detect_mul_mbkb_DSP48_0_U |edge_detect_mul_mbkb_DSP48_0 |    23|
+|9     |  Mat2AXIvideo_U0                    |Mat2AXIvideo                 |   221|
+|10    |  Sobel_U0                           |Sobel                        |   716|
+|11    |    grp_Filter2D_fu_26               |Filter2D                     |   712|
+|12    |      k_buf_0_val_3_U                |Filter2D_k_buf_0_eOg         |     7|
+|13    |        Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram_19  |     7|
+|14    |      k_buf_0_val_4_U                |Filter2D_k_buf_0_eOg_16      |    10|
+|15    |        Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram_18  |    10|
+|16    |      k_buf_0_val_5_U                |Filter2D_k_buf_0_eOg_17      |    21|
+|17    |        Filter2D_k_buf_0_eOg_ram_U   |Filter2D_k_buf_0_eOg_ram     |    21|
+|18    |  img0_data_stream_0_s_U             |fifo_w8_d1_A                 |    32|
+|19    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_15     |    24|
+|20    |  img0_data_stream_1_s_U             |fifo_w8_d1_A_0               |    32|
+|21    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_14     |    24|
+|22    |  img0_data_stream_2_s_U             |fifo_w8_d1_A_1               |    32|
+|23    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_13     |    24|
+|24    |  img1_data_stream_0_s_U             |fifo_w8_d1_A_2               |    32|
+|25    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_12     |    24|
+|26    |  img1_data_stream_1_s_U             |fifo_w8_d1_A_3               |     8|
+|27    |  img1_data_stream_2_s_U             |fifo_w8_d1_A_4               |     8|
+|28    |  img2_data_stream_0_s_U             |fifo_w8_d1_A_5               |    33|
+|29    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_11     |    24|
+|30    |  img2_data_stream_1_s_U             |fifo_w8_d1_A_6               |     8|
+|31    |  img2_data_stream_2_s_U             |fifo_w8_d1_A_7               |     8|
+|32    |  img3_data_stream_0_s_U             |fifo_w8_d1_A_8               |     8|
+|33    |  img3_data_stream_1_s_U             |fifo_w8_d1_A_9               |     8|
+|34    |  img3_data_stream_2_s_U             |fifo_w8_d1_A_10              |    48|
+|35    |    U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg        |    40|
+|36    |  start_for_CvtColoocq_U             |start_for_CvtColoocq         |    11|
+|37    |  start_for_CvtColopcA_U             |start_for_CvtColopcA         |    10|
+|38    |  start_for_Mat2AXIqcK_U             |start_for_Mat2AXIqcK         |     9|
+|39    |  start_for_Sobel_U0_U               |start_for_Sobel_U0           |    10|
++------+-------------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 603 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 871.262 ; gain = 256.273
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 871.262 ; gain = 625.984
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+185 Infos, 225 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 871.262 ; gain = 637.590
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/project.runs/synth_1/edge_detect.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file edge_detect_utilization_synth.rpt -pb edge_detect_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 871.262 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 08:23:30 2019...
+[Thu Sep 12 08:23:34 2019] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:56 . Memory (MB): peak = 245.391 ; gain = 0.000
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect.xdc]
+Finished Parsing XDC File [C:/Users/maoji/Work/FPGA_Projects/VideoImage_process/PCam_5C_Demo/WorkShop2/zyboz7_workshop/hls_project/edge_detect/solution2/impl/verilog/edge_detect.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 591.848 ; gain = 346.457
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 591.848 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1090.914 ; gain = 499.066
+
+
+Implementation tool: Xilinx Vivado v.2017.4
+Project:             edge_Detect
+Solution:            solution2
+Device target:       xc7z020clg400-1
+Report date:         Thu Sep 12 08:23:53 -0700 2019
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:            731
+FF:             960
+DSP:              3
+BRAM:             3
+SRL:              0
+#=== Final timing ===
+CP required:    6.670
+CP achieved post-synthesis:    6.265
+Timing met
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 12 08:23:53 2019...
