@@ -43,3 +43,9 @@ Once the connection with hardware is made and SDK correctly is launched, the res
 
 
 ![TestingResults](./Results.jpg)
+
+## Testing and results2 
+
+With a little bit tuning and apply new Black and white filter, the result of seeing black-and-white picture/video is shown below.
+
+![BW](./BlackWhite.jpg)
